@@ -19,12 +19,12 @@ stage("Push Image to Docker Hub"){
         sh 'sudo docker push  shalinishalu0817/team-3:capstone'
     }
     
-stage('EKS Deploy'){
+stage('K8S Deploy'){
        
-                EKSDeploy(
+                kubernetesDeploy(
     
                     configs: 'deployment.yaml',
-                    kubeconfigId: 'EKS',
+                    kubeconfigId: 'K8S',
                     enableConfigSubstitution: true
                     
         )
