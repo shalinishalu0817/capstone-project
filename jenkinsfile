@@ -21,7 +21,7 @@ stage("Push Image to Docker Hub"){
     
 stage('EKS Deploy'){
        
-                EKS Deploy(
+                EKSDeploy(
     
                     configs: 'deployment.yaml',
                     kubeconfigId: 'EKS',
