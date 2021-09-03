@@ -24,7 +24,7 @@ spec:
       terminationGracePeriodSeconds: 60
       containers:
       - name: nginx
-        image: anjkulkarni/capstone-project
+        image: shalinishalu0817/team-3
         imagePullPolicy: Always
         ports:
         - containerPort: 80
@@ -47,7 +47,7 @@ metadata:
 spec:
   selector:
     app: deployment
-  type: LoadBalancer
+  type: NodePort
   ports:
   - protocol: TCP
     port: 80
