@@ -24,7 +24,7 @@ stage('K8S Deploy'){
                 kubernetesDeploy(
     
                     configs: 'deployment.yaml',
-                    kubeconfigId: 'K8S',
+                    kubeconfigId: 'EKS',
                     enableConfigSubstitution: true
                     
         )
